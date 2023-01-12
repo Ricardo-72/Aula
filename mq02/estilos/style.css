@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/*-----------------CONFIGURAÇÕES GERAIS-------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body, html{
+
+    width: 100vw;
+    height: 100vh;
+    background-color: blanchedalmond;
+    background-size: contain; /*centraliza a img*/
+    background-repeat: no-repeat; /*não deixa repitir a imagens várias vezes*/
+
+}
+h1{
+    color: brown;
+    text-shadow: 2px 1px 0px #f80404;
+    padding: 10px;
+}

@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/*
+Tipical Device  BreakPoint
+Pequenas Telas: de 600px;
+Celular: 600px até 768px;
+Tablet: 600px até 992px;
+Desktop: 768 até 1200px;
+Grandes telas: acima d 1200px  
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: url(../img/back-tablet.jpg);
+    }
+
+        img#iphone{display: none;}
+        img#itablet{display: block;}
+        img#ipc{display: none;}
+        img#itv{display: none;}
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body{
+        background-image: url(../img/back-pc.jpg);
+    }
+
+        img#iphone{display: none;}
+        img#itablet{display: none;}
+        img#ipc{display: block;}
+        img#itv{display: none;}
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px){
+    body{
+        background-image: url(../img/back-tv.jpg);
+    }
+
+        img#iphone{display: none;}
+        img#itablet{display: none;}
+        img#ipc{display: none;}
+        img#itv{display: none;}
+}
+
+@media print {
+    *{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    body{
+        background-image: url(../img/back-print.jpg);
+    }
+    main {
+        border: solid 2px black;
+    }
+    main::after{
+        content: "Este é um estudo sobre @Media Querys";
+        text-decoration: overline;
+        font-style: italic;
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/*--------------ETILOS PARA IMPRESSORAS--------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+menu{
+    display: none;
+}
+article{
+    width: 100%;
+}
+article::after{
+    content: 'Este artigo é um teste de aprendizado da aula 26 sobre Media Queries';
+}
